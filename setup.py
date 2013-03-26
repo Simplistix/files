@@ -10,7 +10,7 @@ else:
     
 from setuptools import setup, find_packages
 
-name = 'dir'
+name = 'files'
 base_dir = os.path.dirname(__file__)
 
 # read test requirements from tox.ini

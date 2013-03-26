@@ -1,17 +1,16 @@
 from collections import MutableMapping
+from .base import Base
 
-class Dir(MutableMapping):
+class Dir(Base, MutableMapping):
 
-    def __init__(self, path):
-        pass
-
-    def list(self, order_by, order_dir):
+    def list(self, key=None, reversed=False, files=True, dirs=True):
         return list_of_strings
 
     def read(self, path, encoding=None):
         return a_string
 
     def write(self, path, value, encoding=None, permissions=None):
+        # path may be slash separated or sequence of segments
         # perms may be string or Permissions object
         return the_path
 
